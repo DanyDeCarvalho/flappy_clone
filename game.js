@@ -4,7 +4,7 @@ var mainState = {
 
     preload: function() { 
 
-        game.stage.backgroundColor = '#FF6A5E';
+        game.stage.backgroundColor = '#000';
         bird = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQMAAAAk8RryAAAABlBMVEXSvicAAABogyUZAAAAGUlEQVR4AWP4DwYHMOgHDEDASCN6lMYV7gChf3AJ/eB/pQAAAABJRU5ErkJggg==";
         pipe = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQMAAAAk8RryAAAABlBMVEV0vy4AAADnrrHQAAAAGUlEQVR4AWP4DwYHMOgHDEDASCN6lMYV7gChf3AJ/eB/pQAAAABJRU5ErkJggg==";
         game.load.image('bird', bird);  
@@ -19,7 +19,7 @@ var mainState = {
         this.pipes.createMultiple(20, 'pipe');  
         this.timer = this.game.time.events.loop(1500, this.addRowOfPipes, this);           
 
-        this.bird = this.game.add.sprite(100, 245, 'bird');
+        this.bird = this.game.add.sprite(10S0, 245, 'bird');
         game.physics.arcade.enable(this.bird);
         this.bird.body.gravity.y = 1000; 
 
